@@ -21,7 +21,7 @@ function draw() {
   background(0);
 
   let points = [];
-  let c = map(multiplier % 255, 0, 255, 0, 255);
+  let c = map(multiplier % 360, 0, 255, 0, 360);
   stroke(c, 255, 255);
   strokeWeight(6);
   noFill();
@@ -37,7 +37,7 @@ function draw() {
   }
 
   points.forEach((p, i) => {
-    let c = map(i, 0, qty, 0, 255);
+    let c = map(i, 0, qty, 0, 360);
     stroke(c, 255, 255);
 
     strokeWeight(1);
